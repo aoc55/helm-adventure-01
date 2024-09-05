@@ -1,0 +1,21 @@
+global:
+  db:
+    port: 3306
+    database: demo-board
+    username: demo-board
+    password: board1234
+
+# Demo-Board
+demo-board:
+  profile: dev
+
+# Mariadb
+mariadb:
+  global:
+    defaultStorageClass: "general"
+  architecture: standalone
+  primary:
+    persistence:
+      size: 8Gi
+  auth:
+    rootPassword: "1234"
